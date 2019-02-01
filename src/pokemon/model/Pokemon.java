@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class Pokemon
 {
-	private int healthPoints;
+	private int healthPoint;
 	private int attackPoints;
 	private double enhancementModifier;
 	private int number;
