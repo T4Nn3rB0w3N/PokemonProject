@@ -23,6 +23,8 @@ public class PokedexController
 	{
 		pokemonList.add(new Mewtwo());
 		pokemonList.add(new Gengar());
+		pokemonList.add(new Entei());
+		pokemonList.add(new Raikou());
 	}
 	
 	public void start()
