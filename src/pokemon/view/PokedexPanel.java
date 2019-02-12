@@ -7,17 +7,50 @@ import java.awt.event.ActionListener;
 
 public class PokedexPanel extends JPanel
 {
-	private PokedexController appController;
-	private JButton updateButton;
+	private PokedexController app;
 	private SpringLayout appLayout;
 	
-	public PokedexPanel(PokedexController appController)
+	private JButton changeButton;
+	
+	private JTextField numberField;
+	private JTextField nameField;
+	private JTextField evolveField;
+	private JTextField attackField;
+	private JTextField enhancementField;
+	private JTextField healthField;
+	
+	private JLabel numberLabel;
+	private JLabel nameLabel;
+	private JLabel evolveLabel;
+	private JLabel attackLabel;
+	private JLabel enhanceLabel;
+	private JLabel healthLabel;
+	private JLabel imageLabel;
+	
+	
+	public PokedexPanel(PokedexController app)
 	{
 		super();
-		this.appController = appController;
+		this.app = app;
+		
+		numberField = new JTextField("0");
+		nameField = new JTextField("Pokemon Name");
+		evolveField = new JTextField("false");
+		attackField = new JTextField("0");
+		enhancementField = new JTextField("0");
+		healthField = new JTextField("0");
+		
+		numberLabel = new JLabel("This pokemon's number is");
+		nameLabel = new JLabel("This pokemon's name is");
+		evolveLabel = new JLabel("This pokemon can evolve");
+		attackLabel = new JLabel("This pokemon's attack level is ");
+		enhanceLabel = new JLabel("This pokemon's enhancement level is ");
+		healthLabel = new JLabel("This pokemon's health is");
+		imageLabel = new JLabel("pokemon goes here");
 		
 		appLayout = new SpringLayout();
-		updateButton = new JButton("UPDATE");
+		changeButton = new JButton("Click here to change the pokevalues");
+		pokedexDropdown = new JComboBox(); // stub
 		
 		setupPanel();
 		setupLayout();
@@ -27,7 +60,23 @@ public class PokedexPanel extends JPanel
 	private void setupPanel()
 	{
 		this.setLayout(appLayout);
-		this.add(updateButton);
+		this.add(changeButton);
+		
+		this.add(numberField);
+		this.add(nameField);
+		this.add(evolveField);
+		this.add(attackField);
+		this.add(enhancementField);
+		this.add(healthField);
+		
+		this.add(numberLabel);
+		this.add(nameLabel);
+		this.add(evolveLabel);
+		this.add(attackLabel);
+		this.add(enhanceLabel);
+		this.add(healthLabel);
+		this.add(imageLabel);
+		
 	}
 	
 	private void setupLayout()
