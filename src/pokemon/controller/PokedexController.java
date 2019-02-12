@@ -25,6 +25,7 @@ public class PokedexController
 		pokemonList.add(new Gengar());
 		pokemonList.add(new Entei());
 		pokemonList.add(new Raikou());
+		pokemonList.add(new Lucario());
 	}
 	
 	public void start()
