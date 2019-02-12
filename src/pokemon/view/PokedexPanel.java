@@ -67,19 +67,15 @@ public class PokedexPanel extends JPanel
 	
 	private void setupPanel()
 	{
-		this.setLayout(appLayout);
-		
+		this.setLayout(appLayout);	
 		this.add(pokedexDropdown);
-		
 		this.add(changeButton);
-		
 		this.add(numberField);
 		this.add(nameField);
 		this.add(evolveField);
 		this.add(attackField);
 		this.add(enhancementField);
 		this.add(healthField);
-		
 		this.add(numberLabel);
 		this.add(nameLabel);
 		this.add(evolveLabel);

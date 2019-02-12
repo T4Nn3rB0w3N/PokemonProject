@@ -61,5 +61,33 @@ public class PokedexController
 		}
 		return names;
 	}
+	
+	public boolean isInt()
+	{
+		try
+		{
+			Integer.parseInt(text);
+			return true;
+		}
+		catch(NumberFormatException error)
+		{
+			JOptionPane.showMessageDialog("you need to use a double type value");
+		}
+		return false;
+	}
+	
+	public boolean isDouble()
+	{
+		try
+		{
+			Double.parseDouble(text);
+			return true;
+		}
+		catch(NumberFormatException error)
+		{
+			JOptionPane.showMessageDialog("You need to use an int type value");
+		}
+		return false;
+	}
 
 }
