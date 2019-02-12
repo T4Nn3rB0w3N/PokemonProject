@@ -71,7 +71,7 @@ public class PokedexController
 		}
 		catch(NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog("you need to use a double type value");
+			JOptionPane.showMessageDialog(null, "you need to use a double type value");
 		}
 		return false;
 	}
@@ -85,7 +85,7 @@ public class PokedexController
 		}
 		catch(NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog("You need to use an int type value");
+			JOptionPane.showMessageDialog(null, "You need to use an int type value");
 		}
 		return false;
 	}
