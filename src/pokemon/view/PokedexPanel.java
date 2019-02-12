@@ -10,6 +10,7 @@ public class PokedexPanel extends JPanel
 	private PokedexController app;
 	private SpringLayout appLayout;
 	
+	private JComboBox pokedexDropdown;
 	private JButton changeButton;
 	
 	private JTextField numberField;
@@ -60,6 +61,9 @@ public class PokedexPanel extends JPanel
 	private void setupPanel()
 	{
 		this.setLayout(appLayout);
+		
+		this.add(pokedexDropdown);
+		
 		this.add(changeButton);
 		
 		this.add(numberField);
