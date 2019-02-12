@@ -10,7 +10,7 @@ public class PokedexPanel extends JPanel
 	private PokedexController app;
 	private SpringLayout appLayout;
 	
-	private JComboBox pokedexDropdown;
+	private JComboBox <String> pokedexDropdown;
 	private JButton changeButton;
 	
 	private JTextField numberField;
@@ -51,11 +51,18 @@ public class PokedexPanel extends JPanel
 		
 		appLayout = new SpringLayout();
 		changeButton = new JButton("Click here to change the pokevalues");
-		pokedexDropdown = new JComboBox(); // stub
+		pokedexDropdown = new JComboBox<String>(); // stub
 		
+		setupDropdown();
 		setupPanel();
 		setupLayout();
 		setupListeners();	
+	}
+	
+	private void setupDropdown()
+	{
+		DefaultComboBoxModel <String> temp = new DefaultComboBoxModel <String>(app.buildPokedexText());
+		pokedexDropdown.setModel(temp);
 	}
 	
 	private void setupPanel()
