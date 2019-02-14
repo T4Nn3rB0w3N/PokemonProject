@@ -35,7 +35,7 @@ public class PokedexController
 	
 	public ArrayList<Pokemon> getPokemonList()
 	{
-		addPokemon();
+		return pokemonList;
 	}
 	
 	public void updatePokemon(int index, String [] data)
@@ -60,6 +60,11 @@ public class PokedexController
 			names[index] = pokemonList.get(index).getName();
 		}
 		return names;
+	}
+	
+	public PokedexFrame getFrame()
+	{
+		return appFrame;
 	}
 	
 	public boolean isInt()
