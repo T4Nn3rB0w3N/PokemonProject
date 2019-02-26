@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Gengar extends Pokemon
+public class Gengar extends Pokemon implements Ghost
 {
 	public Gengar()
 	{

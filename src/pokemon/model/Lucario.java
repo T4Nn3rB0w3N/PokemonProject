@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Lucario extends Pokemon
+public class Lucario extends Pokemon implements Fighting
 {
 	public Lucario()
 	{
