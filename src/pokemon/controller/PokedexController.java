@@ -67,7 +67,7 @@ public class PokedexController
 		return appFrame;
 	}
 	
-	public boolean isInt()
+	public boolean isInt(String text)
 	{
 		try
 		{
@@ -81,7 +81,7 @@ public class PokedexController
 		return false;
 	}
 	
-	public boolean isDouble()
+	public boolean isDouble(String text)
 	{
 		try
 		{
@@ -93,6 +93,16 @@ public class PokedexController
 			JOptionPane.showMessageDialog(null, "You need to use an int type value");
 		}
 		return false;
+	}
+	
+	public void updatePokemon(int index, String [] data)
+	{
+		
+	}
+	
+	public String[] buildPokedexText()
+	{
+		
 	}
 
 }
