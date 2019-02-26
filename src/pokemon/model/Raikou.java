@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Raikou extends Pokemon
+public class Raikou extends Pokemon implements Electric
 {
 	public Raikou()
 	{
@@ -15,6 +15,16 @@ public class Raikou extends Pokemon
 	public Raikou(int num, String name)
 	{
 		super(num, name);
+	}
+	
+	public int thunderStorm()
+	{
+		return 1020;
+	}
+	
+	public int coulombCrush()
+	{
+		return 3045;
 	}
 
 }

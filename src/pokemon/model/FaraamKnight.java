@@ -1,5 +1,4 @@
 package pokemon.model;
-import javax.swing.JOptionPane;
 
 public class FaraamKnight extends Pokemon implements Steel
 {
