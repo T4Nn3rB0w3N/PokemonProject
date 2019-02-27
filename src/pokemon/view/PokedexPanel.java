@@ -160,6 +160,18 @@ public class PokedexPanel extends JPanel
 		repaint();
 	}
 	
+	private void updateField(int index)
+	{
+		String[] data = app.getPokeData(index);
+		
+		attackField.setText(data[0]);
+		enhancementField.setText(data[1]);
+		healthField.setText(data[2]);
+		nameField.setText(data[3]);
+		evolveField.setText(data[4]);
+		numberField.setText(data[5]);
+	}
+	
 	private void setupListeners()
 	{
 		changeButton.addActionListener(new ActionListener()
