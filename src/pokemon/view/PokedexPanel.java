@@ -58,15 +58,9 @@ public class PokedexPanel extends JPanel
 		saveButton = new JButton("Click to save data");
 		pokedexDropdown = new JComboBox<String>();
 		
-		
-		
-		
-		
-		
-		
-		
 		setupDropdown();
 		sendDataToController();
+		changeImageDisplay();
 		setupPanel();
 		setupLayout();
 		setupListeners();	
@@ -210,8 +204,53 @@ public class PokedexPanel extends JPanel
 				changeImageDisplay(name);
 			}
 		});
-	}
-	
 		
-
+		numberField.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+		
+		nameField.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+		
+		evolveField.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+		
+		attackField.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+		
+		enhancementField.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+		
+		healthField.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				//allow user to edit the text
+			}
+		});
+	}
 }
